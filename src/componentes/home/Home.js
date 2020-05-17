@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import js from '../../images/js.svg'
 import react from '../../images/react.svg'
 import node from '../../images/node.svg'
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     render() {
@@ -17,7 +18,7 @@ class Home extends Component {
                                         <h3 className="yellow">Curso de JavaScript</h3>
                                         <img src={js} className="img-fluid" />
                                         <h5 className="text-white">Aprenda uma das tecnologias mais usadas atualmente, o <b className="yellow">JavaScript</b></h5>
-                                        <button type="button" class="btn btn-dark passarmouse-yellow"><h5 className="text-white">( EM BREVE )</h5></button>
+                                        <Link className="nav-link" to="/javascript"><button type="button" className="btn btn-dark passarmouse-yellow"><h5 className="text-white">( EM BREVE )</h5></button></Link>
                                     </div>
                                 </div>
                             </div>
