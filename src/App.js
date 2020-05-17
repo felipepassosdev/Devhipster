@@ -10,8 +10,8 @@ function App() {
     <>
       <Navbar />
       <Switch>
-        <Route path="/" exact component={Javascript} />
-        <Javascript/>
+        <Route path="/" exact component={Home} />
+        <Route path="/javascript" exact component={Javascript} />
       </Switch>
       {/* <Footer /> */}
     </>
