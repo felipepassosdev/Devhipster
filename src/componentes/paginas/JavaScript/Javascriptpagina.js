@@ -16,6 +16,9 @@ class Javascript extends Component {
                             <div className="card dark">
                                 <div className="card-body">
                                     <h5 className="text-white">Curso Javascript</h5>
+                                    <ul>
+                                        <li className="text-white">Apresentação</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
