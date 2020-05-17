@@ -5,16 +5,19 @@ Com o intuito de ajudar a comunidade, criei esse projeto. Percebi a falta de um 
 No diretório do projeto, você pode executar:
 
 yarn start
+
 Executa o aplicativo no modo de desenvolvimento.
 Abra http: // localhost: 3000 para visualizá-lo no navegador.
 
 A página será recarregada se você fizer edições.
 
 yarn teste
+
 Inicia o corredor de teste no modo de observação interativo.
 Consulte a seção sobre a execução de testes para obter mais informações.
 
 yarn build
+
 Cria o aplicativo para produção na pasta de compilação.
 Ele agrupa corretamente o React no modo de produção e otimiza a construção para obter o melhor desempenho.
 
@@ -23,7 +26,8 @@ Seu aplicativo está pronto para ser implantado!
 
 Consulte a seção sobre implantação para obter mais informações.
 
-yarn 
+yarn eject
+
 Nota: esta é uma operação unidirecional. Depois de ejetar, você não pode voltar!
 
 Se você não estiver satisfeito com a ferramenta de criação e as opções de configuração, poderá ejetar a qualquer momento. Este comando removerá a dependência de compilação única do seu projeto.
