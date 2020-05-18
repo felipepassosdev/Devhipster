@@ -1,6 +1,6 @@
 ### DEVHIPSTER - PLATAFORMA GRATUITA E OPEN SOURCE DE PROGRAMAÇÃO ###
 
-Com o intuito de ajudar a comunidade, criei esse projeto. Percebi a falta de um projeto em português e gratuito e resolvi mudar essa realiade e criar o Devhipster. Os vídeos vão ser postados no meu canal do youtube, as atualizações vão ser postadas no meu instagram. A ideia é usar front-end React com Styled Components, backend usarei nodejs.
+Com o intuito de ajudar a comunidade, criei esse projeto. Percebi a falta de um projeto em português e gratuito e resolvi mudar essa realidade e criar o Devhipster. Os vídeos vão ser postados no meu canal do youtube, as atualizações vão ser postadas no meu instagram. A ideia é usar front-end React com Styled Components, backend usarei nodejs.
 
 No diretório do projeto, você pode executar:
 
