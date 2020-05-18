@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import Navbar from './componentes/navbar/Navbar'
 import { Switch, Route } from 'react-router-dom';
-import Home from './componentes/home/Home';
-import Javascript from './componentes/paginas/JavaScript/Javascriptpagina';
+import Home from './pages/Home';
+import Javascript from './pages/JavaScript';
 import { createGlobalStyle } from 'styled-components';
 
 function App() {
