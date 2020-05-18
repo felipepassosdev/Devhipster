@@ -4,7 +4,8 @@ import Navbar from './componentes/navbar/Navbar'
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Javascript from './pages/JavaScript';
-import { createGlobalStyle } from 'styled-components';
+import GlobalStyle from './styles/global'
+
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/javascript" exact component={Javascript} />
       </Switch>
-      <createGlobalStyle/>
+      <GlobalStyle/>
       {/* <Footer /> */}
     </>
   );
