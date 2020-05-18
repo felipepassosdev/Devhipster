@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Col, Card, Button, Image } from 'react-bootstrap';
 
-function CardCourse({ title, description, icon, url }) {
+function CardCourse({ title, description, icon, url, color }) {
 
   const history = useHistory();
 
@@ -12,9 +12,9 @@ function CardCourse({ title, description, icon, url }) {
 
   return (
     <Col md='4' style={{ padding: '15px' }} >
-      <Card text='dark'>
-        <Card.Body>
-          <Card.Title>
+      <Card className={['dark', color, 'shadow'].join(' ')} bg="dark" text="white">
+        <Card.Body className="text-white">
+          <Card.Title className={color}>
             <h3>{title}</h3>
           </Card.Title>
           <Image fluid={true} src={icon} />
