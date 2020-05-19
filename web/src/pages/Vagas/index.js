@@ -5,14 +5,14 @@ import api from '../../services/api'
 
 class Vagas extends Component {
     state = {
-        repositories: [],
+        vagas: [],
     }
 
     componentDidMount = () => {
-        this.apiRepositories()
+        this.apiVagas()
     }
 
-    apiRepositories = async () => {
+    apiVagas = async () => {
         const response = await api.get(`/repos/frontendbr/vagas/issues`, {
             params: {
                 state: 'open',
@@ -21,28 +21,28 @@ class Vagas extends Component {
         console.log(response.data)
 
         this.setState({
-            repositories: response.data
+            vagas: response.data
         })
     }
 
 
+
     render() {
-        const { repositories } = this.state;
+        const { vagas } = this.state;
         return (
             <>
                 <Container>
                     <div className='p-5'></div>
                     <h3 className="text-white">Vagas Front end</h3>
                     <Row>
-                        {repositories.map(repo => (
-                            <Col md={4}>
-                            <div className='p-3'></div>
-                                <Card className="dark shadow-lg">
-                                    <div key={repo.id}>
-                                        <Card.Link href="#">
-                                            <Card.Title className="text-white">{repo.title}</Card.Title>
-                                        </Card.Link>
-                                    </div>
+                        {vagas.map(vaga => (
+                            <Col md={4} key={vaga.id}>
+                                <div className='p-3'></div>
+                                <Card className="dark shadow-lg" style={{ minHeight: '186px' }}>
+                                    <Card.Text className="text-success">{vaga.state ? 'ABERTA' : 'FECHADA'}</Card.Text>
+                                    <Card.Link href="#">
+                                        <Card.Title className="text-white">{vaga.title}</Card.Title>
+                                    </Card.Link>
                                 </Card>
                             </Col>
                         ))}
