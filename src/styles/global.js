@@ -1,6 +1,33 @@
+
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
+
+/* * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+} */
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(11, 10, 13) !important;
+  /* background-image: url(bg.png); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
     .bg-gradiente {
   background: linear-gradient(to right, rgb(240, 0, 80), rgb(255, 115, 80));
 }
