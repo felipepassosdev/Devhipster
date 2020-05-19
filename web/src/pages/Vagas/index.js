@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Card } from 'react-bootstrap';
+import { Container, Card, Row, Col } from 'react-bootstrap';
 import api from '../../services/api'
 
 class Vagas extends Component {
@@ -25,13 +25,27 @@ class Vagas extends Component {
     }
 
 
-    render = () => {
+    render(){
         const { repositories } = this.state;
         return (
             <>
-                <Card>
-                    
-                </Card>
+                <Container>
+                    <Row>
+                        {repositories.map(repo => (
+                            <Col className="col-md-4">
+                                <Card className="dark">
+                                    <ul>
+                                        <li key={repo.id}>
+                                            <h5 className="text-white">{repo.title}</h5>
+                                        </li>
+                                        <h5>{repo.state === 'open' ? ' Vaga: Aberta' : 'Vaga: Fechada'}</h5>
+                                    </ul>
+                                </Card>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+
             </>
         )
     }
