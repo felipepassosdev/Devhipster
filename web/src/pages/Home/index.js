@@ -9,21 +9,21 @@ import node from '../../images/node.svg';
 
 const courses = [
   {
-    title: 'Curso de JavaScript',
+    title: <h4>Curso JavaScript</h4>,
     icon: js,
     color: 'yellow',
     description: <>Aprenda uma das tecnologias mais usadas atualmente, o <b className='yellow'>JavaScript</b></>,
     url: '/javascript'
   },
   {
-    title: 'Curso de React',
+    title: <h4>Curso React</h4>,
     icon: react,
     color: 'blue',
     description: <>Aprenda uma das biblioteca mais amadas do mundo do JS o <b className='blue'>React</b></>,
     url: '/javascript'
   },
   {
-    title: 'Curso NodeJS',
+    title: <h4>Curso NodeJS</h4>,
     icon: node,
     color: 'green',
     description: <>Aprenda usar JavaScript no backend da sua aplicação usando o <b className='green'>NodeJS</b></>,
