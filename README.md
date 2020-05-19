@@ -1,7 +1,8 @@
 <h1 align="center">
 DEVHIPSTER
 
- <img src="./public/index.png">
+ <img src="./public/dh1.png">
+ <img src="./public/dh2.png">
 <h1>
 
 ## Sobre
