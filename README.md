@@ -1,39 +1,51 @@
-### DEVHIPSTER - PLATAFORMA GRATUITA E OPEN SOURCE DE PROGRAMAÇÃO ###
+<h1 align="center">
+DEVHIPSTER
 
-Com o intuito de ajudar a comunidade, criei esse projeto. Percebi a falta de um projeto em português e gratuito e resolvi mudar essa realidade e criar o Devhipster. Os vídeos vão ser postados no meu canal do youtube, as atualizações vão ser postadas no meu instagram. A ideia é usar front-end React com Styled Components, backend usarei nodejs.
+ <img src="./public/index.png">
+<h1>
 
-No diretório do projeto, você pode executar:
+## Sobre
 
-yarn start
+Com o intuito de ajudar a comunidade, criei esse projeto. 
 
-Executa o aplicativo no modo de desenvolvimento.
-Abra http: // localhost: 3000 para visualizá-lo no navegador.
+Devido a falta de um projeto em português e gratuito criei o Devhipster com o intuito de ajudar a comunidade, uma plataforma gratuita e open sorce de programação.</br>
+Os vídeos vão ser postados no meu canal do [youtube](https://www.youtube.com/channel/UCdkEqWvQ05cNpI0wlRMyNWw)</br>
+As atualizações vão ser postadas no meu [instagram](https://www.instagram.com/felipepassosdev/?hl=pt-br). 
 
-A página será recarregada se você fizer edições.
+---
 
-yarn teste
+## Tecnologias utilizadas
 
-Inicia o corredor de teste no modo de observação interativo.
-Consulte a seção sobre a execução de testes para obter mais informações.
+- [ReactJs](https://pt-br.reactjs.org/)
+- [NodeJs](https://nodejs.org/en/)
 
-yarn build
+---
 
-Cria o aplicativo para produção na pasta de compilação.
-Ele agrupa corretamente o React no modo de produção e otimiza a construção para obter o melhor desempenho.
+## Como executar o projeto
 
-A compilação é minificada e os nomes de arquivos incluem os hashes.
-Seu aplicativo está pronto para ser implantado!
+Para executar o projeto é necessário ter instalado o [NodeJs](https://nodejs.org/en/) e recomendamos a utilização do [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install/)
 
-Consulte a seção sobre implantação para obter mais informações.
+Clonar o repositório
+```bash
+$ git clone git@github.com:felipepassosdev/devhipster.git
+```
+Acessar o diretório clonado
+```bash
+$ cd devhipster
+```
+Instalar as dependencias
+```bash
+$ yarn
 
-yarn eject
+ou
 
-Nota: esta é uma operação unidirecional. Depois de ejetar, você não pode voltar!
+$ npm install
+```
+Executar o projeto
+```bash
+$ yarn start
 
-Se você não estiver satisfeito com a ferramenta de criação e as opções de configuração, poderá ejetar a qualquer momento. Este comando removerá a dependência de compilação única do seu projeto.
+ou
 
-Em vez disso, ele copiará todos os arquivos de configuração e as dependências transitivas (Webpack, Babel, ESLint, etc) diretamente no seu projeto, para que você tenha controle total sobre eles. Todos os comandos, exceto ejetar, ainda funcionarão, mas apontarão para os scripts copiados para que você possa ajustá-los. Neste ponto, você está por sua conta.
-
-Você nunca precisa usar a ejeção. O conjunto de recursos selecionados é adequado para implantações pequenas e médias, e você não deve se sentir obrigado a usar esse recurso. No entanto, entendemos que essa ferramenta não seria útil se você não pudesse personalizá-la quando estiver pronta para isso.
-
-
+$ npm run start
+```
