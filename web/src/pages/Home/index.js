@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 
-import CardCourse from '../../componentes/CardCourse';
+import CardCourse from '../../components/CardCourse';
 
 import js from '../../images/js.svg';
 import react from '../../images/react.svg';
