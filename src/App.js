@@ -14,7 +14,6 @@ function App() {
         <Route path="/javascript" exact component={Javascript} />
       </Switch>
       <GlobalStyle/>
-      {/* <Footer /> */}
     </>
   );
 }
