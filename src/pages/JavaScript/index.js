@@ -1,29 +1,30 @@
 import React from 'react';
+import { Container, Row, Col, ResponsiveEmbed, Card } from 'react-bootstrap';
 
 function JavaScript() {
   return (
-    <>
-      <div className="container">
-        <div className="p-5"></div>
-        <div className="row">
-          <div className="col-md-9">
-            <div className="embed-responsive embed-responsive-16by9">
-              <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/iVmYaIZ5Hmk" title="JS" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card dark">
-              <div className="card-body">
-                <h5 className="text-white">Curso Javascript</h5>
-                <ul>
-                  <li className="text-white">Apresentação</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    <Container>
+      <div className="p-5"></div>
+      <Row>
+        <Col md='9'>
+          <ResponsiveEmbed
+            aspectRatio='16by9'
+          >
+            <iframe src="https://www.youtube.com/embed/iVmYaIZ5Hmk" title="JS" allowfullscreen></iframe>
+          </ResponsiveEmbed>
+        </Col>
+        <Col md='3'>
+          <Card text='dark'>
+            <Card.Body>
+              <h5>Curso Javascript</h5>
+              <ul>
+                <li>Apresentação</li>
+              </ul>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

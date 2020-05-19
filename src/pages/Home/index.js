@@ -1,53 +1,54 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Container, Row } from 'react-bootstrap';
+
+import CardCourse from '../../componentes/CardCourse';
 
 import js from '../../images/js.svg';
 import react from '../../images/react.svg';
 import node from '../../images/node.svg';
 
+const courses = [
+  {
+    title: 'Curso de JavaScript',
+    icon: js,
+    color: 'yellow',
+    description: <>Aprenda uma das tecnologias mais usadas atualmente, o <b className='yellow'>JavaScript</b></>,
+    url: '/javascript'
+  },
+  {
+    title: 'Curso de React',
+    icon: react,
+    color: 'blue',
+    description: <>Aprenda uma das biblioteca mais amadas do mundo do JS o <b className='blue'>React</b></>,
+    url: '/javascript'
+  },
+  {
+    title: 'Curso NodeJS',
+    icon: node,
+    color: 'green',
+    description: <>Aprenda usar JavaScript no backend da sua aplicação usando o <b className='green'>NodeJS</b></>,
+    url: '/javascript'
+  },
+
+];
+
 function Home() {
   return (
-    <div className="container">
-      <div className="p-5"></div>
-      <div className="row">
-        <div className="col-md-4">
-          <div className="card dark yellow shadow">
-            <div className="card-body">
-              <div className="card-title">
-                <h3 className="yellow">Curso de JavaScript</h3>
-                <img src={js} alt="" className="img-fluid" />
-                <h5 className="text-white">Aprenda uma das tecnologias mais usadas atualmente, o <b className="yellow">JavaScript</b></h5>
-                <Link className="nav-link" to="/javascript"><button type="button" className="btn btn-dark passarmouse-yellow"><h5 className="text-white">( EM BREVE )</h5></button></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card dark blue shadow">
-            <div className="card-body">
-              <div className="card-title">
-                <h3 className="blue">Curso de React</h3>
-                <img src={react} alt="" className="img-fluid" />
-                <h5 className="text-white">Aprenda uma das biblioteca mais amadas do mundo do JS o <b className="blue">React</b></h5>
-                <button type="button" class="btn btn-dark passarmouse-blue"><h5 className="text-white">( EM BREVE )</h5></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card dark green shadow">
-            <div className="card-body">
-              <div className="card-title">
-                <h3 className="green">Curso NodeJS</h3>
-                <img src={node} alt="" className="img-fluid" />
-                <h5 className="text-white">Aprenda usar JavaScript no backend da sua aplicação usando o <b className="green">NodeJS</b></h5>
-                <button type="button" class="btn btn-dark passarmouse-green"><h5 className="text-white">( EM BREVE )</h5></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Container>
+      <div className='p-5'></div>
+      <Row>
+        {courses.map((course, index) =>
+          <CardCourse
+            key={index}
+            title={course.title}
+            description={course.description}
+            icon={course.icon}
+            color={course.color}
+            url={course.url}
+          />
+        )}
+      </Row>
+    </Container>
   );
 }
 
