@@ -18,6 +18,7 @@ class Vagas extends Component {
                 state: 'open',
             },
         })
+        console.log(response.data)
 
         this.setState({
             repositories: response.data
@@ -25,21 +26,23 @@ class Vagas extends Component {
     }
 
 
-    render(){
+    render() {
         const { repositories } = this.state;
         return (
             <>
                 <Container>
+                    <div className='p-5'></div>
+                    <h3 className="text-white">Vagas Front end</h3>
                     <Row>
                         {repositories.map(repo => (
-                            <Col className="col-md-4">
-                                <Card className="dark">
-                                    <ul>
-                                        <li key={repo.id}>
-                                            <h5 className="text-white">{repo.title}</h5>
-                                        </li>
-                                        <h5>{repo.state === 'open' ? ' Vaga: Aberta' : 'Vaga: Fechada'}</h5>
-                                    </ul>
+                            <Col md={4}>
+                            <div className='p-3'></div>
+                                <Card className="dark shadow-lg">
+                                    <div key={repo.id}>
+                                        <Card.Link href="#">
+                                            <Card.Title className="text-white">{repo.title}</Card.Title>
+                                        </Card.Link>
+                                    </div>
                                 </Card>
                             </Col>
                         ))}
