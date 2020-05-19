@@ -29,6 +29,16 @@ class NavigationBar extends Component {
             >
               <h4>Vagas</h4>
             </Nav.Link>
+            <Nav.Link
+              href='/vlogs'
+            >
+              <h4>Vlogs</h4>
+            </Nav.Link>
+            <Nav.Link
+              href='/podcasts'
+            >
+              <h4>Podcasts</h4>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
