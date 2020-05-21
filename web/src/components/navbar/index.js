@@ -15,7 +15,7 @@ class NavigationBar extends Component {
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto text-center'>
             <Nav.Link
-              href='/'
+              href='/cursos'
             >
               <h4>Cursos</h4>
             </Nav.Link>
