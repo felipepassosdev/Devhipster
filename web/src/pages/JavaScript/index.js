@@ -10,7 +10,7 @@ function JavaScript() {
           <ResponsiveEmbed
             aspectRatio='16by9'
           >
-            <iframe src="https://www.youtube.com/embed/iVmYaIZ5Hmk" title="JS" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/iVmYaIZ5Hmk" title="JS" allowFullScreen></iframe>
           </ResponsiveEmbed>
         </Col>
         <Col md='3'>
