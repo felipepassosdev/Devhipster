@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Container, Card, Row, Col } from 'react-bootstrap';
-import api from '../../services/api'
+import api from '../../services/github';
 
 class CardVagas extends Component {
     state = {
@@ -59,4 +59,4 @@ class CardVagas extends Component {
     }
 }
 
-export default CardVagas
+export default CardVagas;
