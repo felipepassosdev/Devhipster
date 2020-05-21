@@ -6,7 +6,7 @@ function Vagas() {
 
     return (
         <>
-            <CardVagas color />
+            <CardVagas/>
         </>
     )
 }
