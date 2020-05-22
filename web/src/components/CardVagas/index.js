@@ -3,9 +3,12 @@ import React, { Component } from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import api from '../../services/api'
 
+import Loader from '../Loader';
+
 class CardVagas extends Component {
     state = {
         vagas: [],
+        loading: true
     }
 
     componentDidMount = () => {
@@ -21,16 +24,18 @@ class CardVagas extends Component {
         console.log(response.data)
 
         this.setState({
-            vagas: response.data
+            vagas: response.data,
+            loading: false
         })
     }
 
 
 
     render() {
-        const { vagas } = this.state;
+        const { vagas, loading } = this.state;
         return (
             <>
+            { loading ? <Loader /> : (
                 <Container>
                     <div className='p-5'></div>
                     <h3 className="text-white">Vagas Front end</h3>
@@ -53,7 +58,7 @@ class CardVagas extends Component {
                         ))}
                     </Row>
                 </Container>
-
+            ) }
             </>
         )
     }
