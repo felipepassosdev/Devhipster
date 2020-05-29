@@ -15,7 +15,7 @@ function CardCourse({ title, description, icon, url, color }) {
       <Card className={['dark', color, 'shadow'].join(' ')} bg="dark" text="white">
         <Card.Body className="text-white">
           <Card.Title className={color}>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
           </Card.Title>
           <Image fluid={true} src={icon} />
           <h5>{description}</h5>

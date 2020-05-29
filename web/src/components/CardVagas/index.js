@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Container, Card, Row, Col } from 'react-bootstrap';
-import api from '../../services/api'
+import api from '../../services/github';
 
 import Loader from '../Loader';
 
@@ -64,4 +64,4 @@ class CardVagas extends Component {
     }
 }
 
-export default CardVagas
+export default CardVagas;
