@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Col, Card, Button, Image } from 'react-bootstrap';
+import Loader from '../Loader';
 
 function CardCourse({ title, description, icon, url, color }) {
 
