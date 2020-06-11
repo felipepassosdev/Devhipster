@@ -17,17 +17,17 @@ class NavigationBar extends Component {
             <Nav.Link
               href='/'
             >
-              <h4>Cursos</h4>
-            </Nav.Link>
-            <Nav.Link
-              href='/execicios'
-            >
-              <h4>Exercícios</h4>
+              <h4>Desafios</h4>
             </Nav.Link>
             <Nav.Link
               href='/vagas'
             >
               <h4>Vagas</h4>
+            </Nav.Link>
+            <Nav.Link
+              href='/cursos'
+            >
+              <h4>Cursos</h4>
             </Nav.Link>
             <Nav.Link
               href='/vlogs'
